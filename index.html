@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An in-depth guide to solar energy: how photovoltaic panels work, their technology, environmental impact, storage, and the future of clean electricity.">
+  <meta name="theme-color" content="#0b100d">
+  <title>SOLARA — Understand the power of the sun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="SOLARA home">SOLARA<span>®</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#science">The science</a>
+      <a href="#technology">Technology</a>
+      <a href="#impact">The impact</a>
+      <a href="#future">The future</a>
+      <a href="#resources">Resources</a>
+    </nav>
+    <div class="header-actions">
+      <a class="login-link" href="login.html" id="accountLink">Log in</a>
+      <a class="button button-small" href="register.html" id="accountButton">Create account</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image" role="img" aria-label="A wide field of solar panels under a bright sky"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content page-width">
+        <p class="eyebrow light-eyebrow"><span class="eyebrow-line"></span> A clearer view of clean energy</p>
+        <h1>The future is<br><em>powered by light.</em></h1>
+        <p class="hero-copy">Solar energy is more than panels on a roof. It is a remarkable scientific process, a changing part of the global electricity system, and one of the tools available as the world moves toward lower-carbon energy.</p>
+        <div class="hero-actions">
+          <a class="button" href="#science">Explore the science <span aria-hidden="true">↘</span></a>
+          <a class="text-link light-link" href="#technology">Discover the technology <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-caption"><span>01 / 06</span><span>Sunlight · Science · Possibility</span></div>
+      </div>
+      <div class="hero-side-note">ENERGY FOR A CHANGING WORLD</div>
+    </section>
+
+    <section class="intro section-pad page-width" id="science">
+      <div class="section-kicker reveal">01 — THE BIG PICTURE</div>
+      <div class="intro-grid">
+        <h2 class="display-heading reveal">A powerful idea,<br><em>made practical.</em></h2>
+        <div class="intro-text reveal">
+          <p class="lead">Every hour, the Sun sends an enormous amount of energy toward Earth. Solar technology captures a small part of that incoming energy and turns it into electricity or heat that people can use.</p>
+          <p>Photovoltaic solar panels generate electricity directly from light. They can be installed on homes, schools, warehouses, parking structures, and large open areas. A single installation may help power one building; thousands of installations can contribute to an electricity network.</p>
+          <p>Solar power is not a complete answer to every energy challenge. It varies with daylight and weather, requires materials and manufacturing, and often works best alongside other energy sources and storage. Understanding both its strengths and its limitations is what makes the technology so interesting.</p>
+          <a class="underlined-link" href="#how-it-works">Start with how it works <span>↘</span></a>
+        </div>
+      </div>
+      <div class="wide-image reveal">
+        <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=2000&q=85" alt="Rows of photovoltaic panels collecting sunlight">
+        <span class="image-label">Solar installations turn available sunlight into useful energy.</span>
+      </div>
+    </section>
+
+    <section class="dark-section section-pad" id="how-it-works">
+      <div class="page-width">
+        <div class="section-kicker reveal">02 — THE PHOTOVOLTAIC EFFECT</div>
+        <div class="section-heading-row">
+          <h2 class="display-heading reveal">From a ray of light<br><em>to a room full of power.</em></h2>
+          <p class="section-summary reveal">A solar cell does not store sunlight. It uses the energy in light to set electrical charges in motion. That process is known as the photovoltaic effect.</p>
+        </div>
+        <div class="process-list">
+          <article class="process-item reveal">
+            <div class="process-number">01</div>
+            <div><h3>Light reaches the cell</h3><p>A solar panel contains many photovoltaic cells, most commonly made using silicon. When sunlight reaches a cell, particles of light called photons transfer energy to the material. Some of that energy is absorbed and can free electrons to move.</p></div>
+            <div class="process-symbol">光</div>
+          </article>
+          <article class="process-item reveal">
+            <div class="process-number">02</div>
+            <div><h3>Electrical charges are separated</h3><p>The cell is designed with an internal electric field, created by carefully treating different layers of semiconductor material. This field helps direct electrons and positively charged spaces in opposite directions, producing a voltage.</p></div>
+            <div class="process-symbol">±</div>
+          </article>
+          <article class="process-item reveal">
+            <div class="process-number">03</div>
+            <div><h3>Current flows through a circuit</h3><p>When the cell is connected to an electrical circuit, electrons can travel through the external path. Their movement is an electric current. Multiple cells are connected together to form a panel, and panels are connected to create an array.</p></div>
+            <div class="process-symbol">↗</div>
+          </article>
+          <article class="process-item reveal">
+            <div class="process-number">04</div>
+            <div><h3>An inverter makes the electricity useful</h3><p>Solar panels produce direct current, or DC. Most buildings and the electricity grid use alternating current, or AC. An inverter converts the electricity into the form required by household equipment or the grid.</p></div>
+            <div class="process-symbol">∿</div>
+          </article>
+        </div>
+        <div class="note-block reveal"><strong>One important distinction</strong><p>Solar photovoltaic panels generate electricity. Solar thermal systems, by contrast, collect the Sun's heat, often to warm water or another fluid. Both use solar energy, but they do different jobs.</p></div>
+      </div>
+    </section>
+
+    <section class="section-pad page-width" id="technology">
+      <div class="section-kicker reveal">03 — THE SYSTEM</div>
+      <div class="section-heading-row">
+        <h2 class="display-heading reveal">More than<br><em>a panel.</em></h2>
+        <p class="section-summary reveal">A working solar installation is a collection of components. Each has a specific role, from capturing sunlight to safely delivering electricity where it is needed.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature feature-large reveal">
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=85" alt="Solar panels installed on a roof">
+          <div class="feature-copy"><span class="feature-index">A / GENERATION</span><h3>Photovoltaic modules</h3><p>Cells are sealed into modules to protect them from the weather. Modules are wired together into strings and arrays to reach the voltage and power level required by the system.</p></div>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-visual inverter-visual"><span>DC</span><i>→</i><span>AC</span></div>
+          <div class="feature-copy"><span class="feature-index">B / CONVERSION</span><h3>The inverter</h3><p>The inverter converts DC into AC and monitors the system. Some designs also manage battery charging, grid interaction, and system safety.</p></div>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-visual battery-visual"><div class="battery-shape"><span></span><span></span><span></span><span></span></div></div>
+          <div class="feature-copy"><span class="feature-index">C / STORAGE</span><h3>Batteries</h3><p>A battery can store surplus electricity for later use. It may supply power after sunset or provide backup during an outage when the system is designed for that purpose.</p></div>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-visual grid-visual"><div class="grid-lines"></div><span>HOME</span><span>GRID</span></div>
+          <div class="feature-copy"><span class="feature-index">D / CONNECTION</span><h3>Metering and the grid</h3><p>Grid-connected systems can use electricity from the network when solar production is low and may export surplus power when local rules and the connection agreement allow it.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="image-break">
+      <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=2000&q=85" alt="Solar panels stretching across a landscape">
+      <div class="image-break-overlay"><p class="eyebrow light-eyebrow">ENERGY IN CONTEXT</p><h2>Designed around<br>the daylight.</h2></div>
+    </section>
+
+    <section class="section-pad page-width" id="types">
+      <div class="section-kicker reveal">04 — PANEL TECHNOLOGY</div>
+      <h2 class="display-heading reveal">Different materials.<br><em>Different possibilities.</em></h2>
+      <p class="section-summary standalone reveal">Not all solar panels are built in the same way. The best option depends on the available space, budget, climate, installation design, and the performance required.</p>
+      <div class="type-table reveal">
+        <div class="type-row type-header"><span>TECHNOLOGY</span><span>WHAT IT IS</span><span>WHERE IT FITS</span></div>
+        <div class="type-row"><h3>Monocrystalline silicon</h3><p>Made from silicon with a single-crystal structure. These modules are widely used and often offer high conversion efficiency.</p><p>Common on homes, businesses, and utility-scale solar farms where space and output matter.</p></div>
+        <div class="type-row"><h3>Polycrystalline silicon</h3><p>Made from silicon containing multiple crystal structures. This technology was historically a common lower-cost option.</p><p>Found in older installations and some markets, although monocrystalline products have become widespread.</p></div>
+        <div class="type-row"><h3>Thin-film</h3><p>Uses very thin layers of photovoltaic material deposited onto a supporting surface. There are several thin-film chemistries.</p><p>Can suit certain large-area, lightweight, or specialized applications, depending on the product.</p></div>
+        <div class="type-row"><h3>Bifacial modules</h3><p>Designed to collect light from both the front and rear surfaces. Reflected light from the ground can add to production.</p><p>Often used in open installations with suitable mounting height and reflective surroundings.</p></div>
+      </div>
+    </section>
+
+    <section class="dark-section section-pad" id="production">
+      <div class="page-width">
+        <div class="section-kicker reveal">05 — WHEN THE SUN CHANGES</div>
+        <div class="section-heading-row">
+          <h2 class="display-heading reveal">Sunlight is not<br><em>constant.</em></h2>
+          <p class="section-summary reveal">Solar output changes throughout the day and across the seasons. System designers estimate production using location, orientation, tilt, shading, weather patterns, and equipment specifications.</p>
+        </div>
+        <div class="production-grid">
+          <div class="production-copy reveal">
+            <h3>What affects production?</h3>
+            <p><strong>Time of day:</strong> Output usually rises after sunrise, reaches a peak around the middle part of the day, and falls toward sunset. The exact peak depends on location, season, weather, and panel orientation.</p>
+            <p><strong>Clouds and temperature:</strong> Panels can still generate electricity under cloud, but usually produce less. Very high cell temperatures can also reduce the output of many conventional modules.</p>
+            <p><strong>Shade and dirt:</strong> Trees, chimneys, nearby buildings, dust, and debris can reduce generation. System layout and appropriate maintenance help manage these effects.</p>
+            <p><strong>Direction and tilt:</strong> The best orientation depends on the site's latitude and the pattern of electricity use. A professional assessment should account for local conditions rather than rely on a universal angle.</p>
+          </div>
+          <div class="daylight-panel reveal">
+            <div class="daylight-title">A simplified day of solar production</div>
+            <div class="chart-area">
+              <div class="chart-y"><span>HIGH</span><span>MEDIUM</span><span>LOW</span></div>
+              <svg viewBox="0 0 600 260" role="img" aria-label="Illustrative solar output curve rising in the morning, peaking around midday, and falling in the evening">
+                <defs><linearGradient id="areaFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#c7f27d" stop-opacity=".38"/><stop offset="100%" stop-color="#c7f27d" stop-opacity="0"/></linearGradient></defs>
+                <path d="M0 235 C80 230 100 205 155 145 S245 35 300 32 S405 75 455 145 S525 225 600 235 L600 260 L0 260Z" fill="url(#areaFill)"/>
+                <path d="M0 235 C80 230 100 205 155 145 S245 35 300 32 S405 75 455 145 S525 225 600 235" fill="none" stroke="#c7f27d" stroke-width="4" stroke-linecap="round"/>
+                <path d="M0 85H600 M0 160H600 M0 235H600" stroke="#ffffff" stroke-opacity=".12" stroke-dasharray="4 7"/>
+              </svg>
+              <div class="chart-x"><span>6 AM</span><span>9 AM</span><span>12 PM</span><span>3 PM</span><span>6 PM</span></div>
+            </div>
+            <p class="chart-caption">Illustrative curve only. Actual production depends on the location, season, weather, shading, and system design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad page-width" id="storage">
+      <div class="section-kicker reveal">06 — STORAGE AND RELIABILITY</div>
+      <div class="intro-grid">
+        <h2 class="display-heading reveal">Save today's<br><em>sun for later.</em></h2>
+        <div class="intro-text reveal">
+          <p class="lead">Solar panels generally produce the most electricity when the Sun is shining. But many homes and businesses use electricity early in the morning, in the evening, and overnight.</p>
+          <p>Battery energy storage can help bridge the gap. When solar production is greater than immediate demand, a compatible system can direct some of the surplus electricity into a battery. Later, the stored energy can be discharged to supply selected loads or support the wider electricity system.</p>
+          <p>Storage is not automatically included with every solar installation. Batteries add cost, have a limited operating life, and need appropriate controls and safety equipment. The right size depends on the building's energy use, backup requirements, local electricity prices, and the system's design.</p>
+        </div>
+      </div>
+      <div class="wide-image reveal"><img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=2000&q=85" alt="Electricity infrastructure connecting power generation and communities"><span class="image-label">A reliable electricity system combines generation, networks, flexible demand, and storage.</span></div>
+    </section>
+
+    <section class="dark-section section-pad" id="impact">
+      <div class="page-width">
+        <div class="section-kicker reveal">07 — THE ENVIRONMENTAL PICTURE</div>
+        <h2 class="display-heading reveal">Cleaner electricity.<br><em>Not impact-free.</em></h2>
+        <div class="impact-columns">
+          <article class="impact-column reveal"><span class="impact-mark">01</span><h3>During operation</h3><p>Solar photovoltaic systems generate electricity without burning fuel at the point of generation. This means they do not release direct combustion emissions while producing power. Replacing electricity from fossil-fuel plants can reduce greenhouse gas emissions and air pollution.</p></article>
+          <article class="impact-column reveal"><span class="impact-mark">02</span><h3>Before installation</h3><p>Solar panels require mining, processing, manufacturing, transport, and construction. These stages consume energy and materials and create environmental impacts. A fair comparison considers the entire life cycle, not just what happens on a sunny afternoon.</p></article>
+          <article class="impact-column reveal"><span class="impact-mark">03</span><h3>At end of life</h3><p>Panels eventually degrade or become uneconomic to operate. Recycling can recover materials such as glass and aluminum, while more specialized processes can recover other valuable components. Collection systems and recycling capacity are important parts of responsible solar deployment.</p></article>
+        </div>
+        <div class="note-block reveal"><strong>Think in life cycles</strong><p>Solar power is generally a low-carbon electricity source over its full life cycle compared with fossil-fuel generation. Its exact environmental footprint depends on manufacturing methods, materials, transport, location, performance, and end-of-life treatment.</p></div>
+      </div>
+    </section>
+
+    <section class="section-pad page-width" id="pros-cons">
+      <div class="section-kicker reveal">08 — A BALANCED VIEW</div>
+      <h2 class="display-heading reveal">The benefits,<br><em>and the trade-offs.</em></h2>
+      <div class="balance-grid">
+        <div class="balance-side positive reveal"><p class="eyebrow">THE OPPORTUNITY</p><h3>Why solar is valuable</h3><ul><li>Sunlight is a renewable energy resource.</li><li>Solar PV produces electricity without direct combustion emissions during operation.</li><li>Systems can be installed close to where electricity is used.</li><li>Operating costs can be relatively predictable after installation.</li><li>Solar can be combined with batteries, wind, hydro, and other sources.</li></ul></div>
+        <div class="balance-side negative reveal"><p class="eyebrow">THE CHALLENGE</p><h3>What needs planning</h3><ul><li>Output varies with daylight, seasons, and weather.</li><li>Upfront equipment and installation costs can be substantial.</li><li>Manufacturing requires materials, energy, and land or factory space.</li><li>Grid upgrades and storage may be needed as solar capacity grows.</li><li>End-of-life collection and recycling must be managed responsibly.</li></ul></div>
+      </div>
+    </section>
+
+    <section class="dark-section section-pad" id="installation">
+      <div class="page-width">
+        <div class="section-kicker reveal">09 — FROM IDEA TO INSTALLATION</div>
+        <h2 class="display-heading reveal">What does a solar<br><em>project involve?</em></h2>
+        <div class="timeline">
+          <article class="timeline-item reveal"><span>01</span><div><h3>Understand the energy demand</h3><p>Review electricity bills, daily usage patterns, and future needs such as an electric vehicle, heat pump, or business expansion. The aim is to understand when and how much electricity is used.</p></div></article>
+          <article class="timeline-item reveal"><span>02</span><div><h3>Assess the site</h3><p>Check roof condition, available area, orientation, tilt, shading, structural capacity, and electrical connection. Local weather and solar resource data help estimate expected generation.</p></div></article>
+          <article class="timeline-item reveal"><span>03</span><div><h3>Design the system</h3><p>Choose suitable modules, an inverter, mounting equipment, protection devices, and possibly battery storage. The design must follow local electrical and building requirements.</p></div></article>
+          <article class="timeline-item reveal"><span>04</span><div><h3>Install and connect</h3><p>Qualified installers mount and wire the equipment, complete electrical checks, and arrange approvals or grid connection where required. Safety procedures are essential throughout the work.</p></div></article>
+          <article class="timeline-item reveal"><span>05</span><div><h3>Monitor and maintain</h3><p>System monitoring helps identify unexpected drops in output. Periodic inspection, safe cleaning when needed, and prompt attention to faults can help the system perform as intended.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad page-width" id="world">
+      <div class="section-kicker reveal">10 — SOLAR AROUND THE WORLD</div>
+      <div class="intro-grid">
+        <h2 class="display-heading reveal">One Sun.<br><em>Many local stories.</em></h2>
+        <div class="intro-text reveal">
+          <p class="lead">Solar power can be used in very different places: from rooftops in dense cities to utility-scale projects in sunny regions, and from remote communities to industrial sites.</p>
+          <p>How much electricity a system can produce depends on more than a country's reputation for sunshine. Latitude, cloud patterns, temperature, dust, seasonal changes, grid access, land availability, financing, and public policy all influence the economics and practicality of solar energy.</p>
+          <p>In places where the grid is weak or remote, smaller solar systems with batteries can provide electricity to homes, schools, clinics, and communication equipment. In cities, rooftop solar can make use of existing building surfaces rather than requiring a separate power-generation site.</p>
+        </div>
+      </div>
+      <div class="world-image reveal"><img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=2000&q=85" alt="Renewable energy infrastructure in a wide landscape"></div>
+    </section>
+
+    <section class="dark-section section-pad" id="future">
+      <div class="page-width">
+        <div class="section-kicker reveal">11 — WHAT COMES NEXT</div>
+        <h2 class="display-heading reveal">The next chapter<br><em>is still being written.</em></h2>
+        <div class="future-grid">
+          <article class="future-item reveal"><span>01 / MATERIALS</span><h3>More advanced cells</h3><p>Researchers are developing new cell designs and materials that may improve efficiency, lower manufacturing costs, or enable new applications. Perovskite-based cells and tandem designs are among the areas receiving significant research attention.</p></article>
+          <article class="future-item reveal"><span>02 / DESIGN</span><h3>Solar in more places</h3><p>Building-integrated photovoltaics, floating solar, and agrivoltaics explore ways to combine electricity generation with buildings, water surfaces, or agriculture. Each approach has its own engineering and environmental considerations.</p></article>
+          <article class="future-item reveal"><span>03 / ELECTRICITY</span><h3>Smarter energy systems</h3><p>Better forecasting, flexible electricity demand, batteries, and modern grid controls can help electricity networks manage changing renewable generation while maintaining reliability.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad page-width" id="gallery">
+      <div class="section-kicker reveal">12 — FIELD NOTES</div>
+      <div class="section-heading-row"><h2 class="display-heading reveal">A closer look<br><em>at solar.</em></h2><p class="section-summary reveal">Solar technology appears in landscapes, on rooftops, and alongside the infrastructure that moves electricity to people. Explore a few examples.</p></div>
+      <div class="gallery-grid">
+        <figure class="gallery-large reveal"><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1400&q=85" alt="Solar panels on a rooftop"><figcaption>01 / Rooftop generation</figcaption></figure>
+        <figure class="reveal"><img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=900&q=85" alt="Large solar array"><figcaption>02 / Solar arrays</figcaption></figure>
+        <figure class="reveal"><img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=900&q=85" alt="Solar panels in sunlight"><figcaption>03 / Capturing sunlight</figcaption></figure>
+        <figure class="reveal"><img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=85" alt="Power transmission lines"><figcaption>04 / The electricity network</figcaption></figure>
+        <figure class="reveal"><img src="https://images.unsplash.com/photo-1497436072909-60f36e1d4b1c?auto=format&fit=crop&w=900&q=85" alt="Green natural landscape"><figcaption>05 / A changing energy landscape</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="dark-section section-pad" id="resources">
+      <div class="page-width">
+        <div class="section-kicker reveal">13 — KEEP LEARNING</div>
+        <h2 class="display-heading reveal">Go deeper.<br><em>Follow the evidence.</em></h2>
+        <p class="section-summary standalone reveal">These resources provide further explanations, data, and research about solar energy and the wider energy transition.</p>
+        <div class="resource-list">
+          <a class="resource-row reveal" href="https://www.energy.gov/eere/solar/how-does-solar-work" target="_blank" rel="noopener"><span>01</span><div><h3>U.S. Department of Energy — How does solar work?</h3><p>A clear explanation of photovoltaic technology and solar energy systems.</p></div><b>↗</b></a>
+          <a class="resource-row reveal" href="https://www.nrel.gov/research/re-photovoltaics.html" target="_blank" rel="noopener"><span>02</span><div><h3>National Renewable Energy Laboratory</h3><p>Research and technical information about photovoltaic technologies.</p></div><b>↗</b></a>
+          <a class="resource-row reveal" href="https://www.iea.org/energy-system/renewables/solar-pv" target="_blank" rel="noopener"><span>03</span><div><h3>International Energy Agency — Solar PV</h3><p>Global analysis of solar photovoltaic deployment and energy markets.</p></div><b>↗</b></a>
+          <a class="resource-row reveal" href="https://www.irena.org/Energy-Transition/Technology/Solar-energy" target="_blank" rel="noopener"><span>04</span><div><h3>International Renewable Energy Agency</h3><p>Information about solar technologies and the renewable energy transition.</p></div><b>↗</b></a>
+        </div>
+        <div class="video-heading reveal"><div><p class="eyebrow">WATCH AND UNDERSTAND</p><h2>Video learning</h2></div><p>Explore video explainers and demonstrations from established educational and energy organizations.</p></div>
+        <div class="video-grid">
+          <a class="video-card reveal" href="https://www.youtube.com/results?search_query=how+solar+panels+work+photovoltaic+effect" target="_blank" rel="noopener"><div class="video-thumb thumb-one"><span>PLAY SEARCH ↗</span></div><h3>How solar panels work</h3><p>Photovoltaic cells, electrons, and electricity.</p></a>
+          <a class="video-card reveal" href="https://www.youtube.com/results?search_query=solar+energy+explained+for+students" target="_blank" rel="noopener"><div class="video-thumb thumb-two"><span>PLAY SEARCH ↗</span></div><h3>Solar energy explained</h3><p>A beginner-friendly overview of solar power.</p></a>
+          <a class="video-card reveal" href="https://www.youtube.com/results?search_query=solar+battery+storage+how+it+works" target="_blank" rel="noopener"><div class="video-thumb thumb-three"><span>PLAY SEARCH ↗</span></div><h3>How solar batteries work</h3><p>Energy storage, charging, and backup power.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section section-pad page-width" id="faq">
+      <div class="section-kicker reveal">14 — COMMON QUESTIONS</div>
+      <div class="section-heading-row"><h2 class="display-heading reveal">Good questions<br><em>deserve clear answers.</em></h2><p class="section-summary reveal">A few common questions about what solar panels can and cannot do.</p></div>
+      <div class="faq-list">
+        <details class="reveal"><summary>Do solar panels work on cloudy days?</summary><p>Yes. Photovoltaic panels can generate electricity from diffuse daylight, not only direct sunshine. Their output is usually lower under heavy cloud, and the amount depends on cloud thickness, panel technology, and local conditions.</p></details>
+        <details class="reveal"><summary>Can solar panels generate electricity at night?</summary><p>Conventional photovoltaic panels need light to generate electricity, so they do not produce meaningful solar power at night. A battery can store electricity generated earlier, while a grid-connected building can draw electricity from the network.</p></details>
+        <details class="reveal"><summary>How long do solar panels last?</summary><p>Many manufacturers offer performance warranties of around 25 years, and panels can continue operating beyond that period. Their output generally declines gradually over time. Actual service life depends on product quality, climate, installation, and maintenance.</p></details>
+        <details class="reveal"><summary>Do I need a battery with solar panels?</summary><p>No. Many solar installations operate without a battery and remain connected to the electricity grid. A battery may be useful when backup power, greater self-consumption, or time-shifting electricity use is important.</p></details>
+        <details class="reveal"><summary>Will a solar system work during a power cut?</summary><p>Most standard grid-connected systems shut down during a grid outage to protect utility workers and equipment. Backup power requires a compatible inverter, suitable battery or other source, and a correctly configured isolation system.</p></details>
+        <details class="reveal"><summary>Are solar panels completely environmentally harmless?</summary><p>No energy technology has zero environmental impact. Solar panels require materials, manufacturing, transport, land or roof space, and end-of-life management. However, solar PV generally has much lower lifecycle greenhouse gas emissions than fossil-fuel electricity.</p></details>
+        <details class="reveal"><summary>Can solar panels power an entire home?</summary><p>A suitably designed system can produce as much electricity as a home uses over a chosen period, but production and consumption do not always happen at the same time. The result depends on the home's demand, location, roof, system size, grid rules, and whether storage is included.</p></details>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-bg"></div>
+      <div class="closing-content page-width reveal"><p class="eyebrow light-eyebrow">THE SUN IS ONLY THE BEGINNING</p><h2>Understand the energy.<br><em>Shape what comes next.</em></h2><p>Better energy decisions begin with curiosity, clear information, and an understanding of the systems that power everyday life.</p><a class="button" href="#top">Back to the beginning ↑</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="#top">SOLARA<span>®</span></a>
+    <p>An independent educational introduction to solar energy.</p>
+    <div><a href="https://www.energy.gov/eere/solar" target="_blank" rel="noopener">DOE Solar</a><a href="https://www.iea.org/energy-system/renewables/solar-pv" target="_blank" rel="noopener">IEA Solar PV</a></div>
+    <small>© <span id="year"></span> SOLARA. Educational content; check linked sources for current technical guidance.</small>
+  </footer>
+</body>
+</html>
